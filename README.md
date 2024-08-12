@@ -1,0 +1,1 @@
+# Ransomware_Readiness_Assessment_Tool
