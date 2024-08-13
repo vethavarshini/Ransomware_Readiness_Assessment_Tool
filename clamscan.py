@@ -6,9 +6,8 @@ from pyfiglet import figlet_format
 
 #list of directories
 directories = [
-    #'/home/username/Desktop/',
-    #'/home/username/Downloads/'
-
+    '/home/<username>/Desktop/',
+    '/home/<username>/Downloads/'
 ]
 directories_names=['Desktop','Home','Documents','Downloads']
 def run_clamav_scan(directory):
