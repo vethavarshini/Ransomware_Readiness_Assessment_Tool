@@ -1,0 +1,5 @@
+lynis
+clamav
+pyfiglet
+rich
+tabulate
