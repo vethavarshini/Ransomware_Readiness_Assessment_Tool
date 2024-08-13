@@ -37,6 +37,9 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
         <li>For Lynis:
           <pre><code>sudo apt-get install lynis</code></pre>
         </li>
+        <li>For PDF generation:
+          <pre><code>sudo pip install fpdf</code></pre>
+        </li>
       </ul>
     </li>
   </ol>
@@ -57,7 +60,7 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
   <p>If you prefer to use the CLI for testing purposes, you can run the following scripts:</p>
   <ul>
     <li><strong>ClamAV Scan:</strong> 
-      <pre><code>python main_ransomware_detection.py</code></pre>
+      <pre><code>sudo python integration.py</code></pre>
     </li>
   </ul>
   
