@@ -62,7 +62,7 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
   <p>If you prefer to use the CLI for testing purposes, you can run the following scripts:</p>
   <ul>
     <li><strong>ClamAV Scan:</strong> 
-      <pre><code>sudo python integration.py</code></pre>
+      <pre><code>sudo python integration1.py</code></pre>
     </li>
   </ul>
   
