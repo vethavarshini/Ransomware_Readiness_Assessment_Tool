@@ -6,10 +6,10 @@ from fpdf import FPDF
 import re
 
 # Import the functions from each of your scripts
-from clam import run_clamav_scan, parse_summary, directories
-from mass import check_mass_encryption
-from lynis_tool import run_lynis_scan
-from test import assess_risk
+from clamscan import run_clamav_scan, parse_summary, directories
+from mass_encypt import check_mass_encryption
+from lynis_scan import run_lynis_scan
+from rra_CLI import assess_risk
 
 class RansomwareAssessmentTool(tk.Tk):
     def __init__(self):
@@ -82,7 +82,7 @@ class RansomwareAssessmentTool(tk.Tk):
                 infected_files.extend(re.findall(r'^(.*?):\s*.*\s*FOUND', scan_output, re.MULTILINE))
 
         # Step 2: Check for mass encryption
-        directory_to_scan = '/home/username/Desktop' #Add your path to scan
+        directory_to_scan = '/home/<username>/Desktop' #Add your path to scan
         scan_depth = 5
         log_to_gui("\nChecking for mass encryption...")
         encrypted_files = check_mass_encryption(directory=directory_to_scan, scan_depth=scan_depth)
