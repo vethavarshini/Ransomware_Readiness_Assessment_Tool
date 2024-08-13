@@ -23,7 +23,7 @@
   <ol>
     <li>Clone the repository:
       <pre><code>git clone https://github.com/your-username/ransomware-readiness-assessment.git
-cd ransomware-readiness-assessment</code></pre>
+cd Ransomware_Readiness_Assessment_Tool</code></pre>
     </li>
     <li>Install the required Python packages:
       <pre><code>pip install termcolor tabulate rich pyfiglet</code></pre>
@@ -44,7 +44,7 @@ cd ransomware-readiness-assessment</code></pre>
   <h3>Running the Application</h3>
   <ol>
     <li>Run the main application script:
-      <pre><code>sudo python ransomware_assessment_tool.py</code></pre>
+      <pre><code>sudo python3 code_1.py</code></pre>
     </li>
     <li>The application will start, displaying the main GUI window.</li>
     <li>Click the "SCAN FOR RANSOMWARE" button to begin the scan.</li>
