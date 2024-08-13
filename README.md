@@ -11,6 +11,7 @@
     <li><strong>PDF Summary Report:</strong> Generates a downloadable PDF summary of the assessment results.</li>
   </ul>
 
+
   <h2>Prerequisites</h2>
   <ul>
     <li>Python 3.x</li>
