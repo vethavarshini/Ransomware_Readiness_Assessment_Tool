@@ -82,7 +82,7 @@ class RansomwareAssessmentTool(tk.Tk):
                 infected_files.extend(re.findall(r'^(.*?):\s*.*\s*FOUND', scan_output, re.MULTILINE))
 
         # Step 2: Check for mass encryption
-        directory_to_scan = '/home/vethavarshini/Desktop'
+        directory_to_scan = '/home/username/Desktop' #Add your path to scan
         scan_depth = 5
         log_to_gui("\nChecking for mass encryption...")
         encrypted_files = check_mass_encryption(directory=directory_to_scan, scan_depth=scan_depth)
