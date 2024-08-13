@@ -2,6 +2,8 @@
 
   <p>The <strong>Ransomware Readiness Assessment Tool</strong> is a comprehensive application designed to detect and evaluate potential ransomware threats. The tool combines multiple scanning and assessment methods, including ClamAV antivirus scanning, mass encryption detection, and system auditing with Lynis.</p>
 
+<img src="Screenshot 2024-08-13 114959.png" alt="Mass Encryption" />
+
   <h2>Features</h2>
   <ul>
     <li><strong>ClamAV Scanning:</strong> Performs deep scans of directories to detect and report infected files.</li>
@@ -70,3 +72,6 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
     <li><strong>Permission Issues:</strong> Running Lynis or ClamAV may require <code>sudo</code> privileges.</li>
     <li><strong>No Suspicious Files Found:</strong> This could mean your system is currently not infected, but regular scans are recommended.</li>
   </ul>
+
+   <h2>License</h2>
+  <p>This project is licensed under the GNU License.</p>
