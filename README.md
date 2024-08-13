@@ -22,7 +22,7 @@
   <h2>Installation</h2>
   <ol>
     <li>Clone the repository:
-      <pre><code>git clone https://github.com/your-username/ransomware-readiness-assessment.git
+      <pre><code>git clone https://github.com/vethavarshini/Ransomware_Readiness_Assessment_Tool.git
 cd Ransomware_Readiness_Assessment_Tool</code></pre>
     </li>
     <li>Install the required Python packages:
