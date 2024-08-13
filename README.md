@@ -2,8 +2,6 @@
 
   <p>The <strong>Ransomware Readiness Assessment Tool</strong> is a comprehensive application designed to detect and evaluate potential ransomware threats. The tool combines multiple scanning and assessment methods, including ClamAV antivirus scanning, mass encryption detection, and system auditing with Lynis.</p>
 
-<img src="Screenshot 2024-08-13 114959.png" alt="Mass Encryption" />
-
   <h2>Features</h2>
   <ul>
     <li><strong>ClamAV Scanning:</strong> Performs deep scans of directories to detect and report infected files.</li>
@@ -28,8 +26,9 @@
       <pre><code>git clone https://github.com/vethavarshini/Ransomware_Readiness_Assessment_Tool.git
 cd Ransomware_Readiness_Assessment_Tool</code></pre>
     </li>
-    <li>Install the required Python packages:
-      <pre><code>pip install termcolor tabulate rich pyfiglet</code></pre>
+    <li>Install the required Python packages preferably with adminstrative privileges (sudo) :
+      <pre><code>pip install termcolor tabulate rich pyfiglet fpdf</code></pre>
+      <pre><code>apt-get install python3-tk</code></pre>
     </li>
     <li>Ensure <strong>ClamAV</strong> and <strong>Lynis</strong> are installed on your system:
       <ul>
@@ -39,9 +38,6 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
         <li>For Lynis:
           <pre><code>sudo apt-get install lynis</code></pre>
         </li>
-        <li>For PDF generation:
-          <pre><code>sudo pip install fpdf</code></pre>
-        </li>
       </ul>
     </li>
   </ol>
@@ -50,7 +46,7 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
   <h3>Running the Application</h3>
   <ol>
     <li>Run the main application script:
-      <pre><code>sudo python3 code_1.py</code></pre>
+      <pre><code>sudo python3 rra_tool.py</code></pre>
     </li>
     <li>The application will start, displaying the main GUI window.</li>
     <li>Click the "SCAN FOR RANSOMWARE" button to begin the scan.</li>
@@ -58,11 +54,11 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
     <li>After the scan completes, you can download the assessment summary as a PDF by clicking the "Download Assessment Summary" button.</li>
   </ol>
 
-  <h3>CLI Usage (Optional)</h3>
+  <h3>CLI Version</h3>
   <p>If you prefer to use the CLI for testing purposes, you can run the following scripts:</p>
   <ul>
-    <li><strong>ClamAV Scan:</strong> 
-      <pre><code>sudo python integration1.py</code></pre>
+    <li><strong>CLI:</strong> 
+      <pre><code>sudo python rra_CLI.py</code></pre>
     </li>
   </ul>
   
@@ -73,5 +69,3 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
     <li><strong>No Suspicious Files Found:</strong> This could mean your system is currently not infected, but regular scans are recommended.</li>
   </ul>
 
-   <h2>License</h2>
-  <p>This project is licensed under the GNU License.</p>
