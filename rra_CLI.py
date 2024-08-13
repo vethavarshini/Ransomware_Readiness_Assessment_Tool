@@ -9,9 +9,9 @@ import os
 from datetime import datetime
 
 # Import the functions from each of your scripts
-from clam import run_clamav_scan, parse_summary, display_summary, directories, directories_names
-from mass import check_mass_encryption
-from lynis_tool import run_lynis_scan
+from clamscan import run_clamav_scan, parse_summary, display_summary, directories, directories_names
+from mass_encrypt import check_mass_encryption
+from lynis_scan import run_lynis_scan
 
 def get_user_inputs():
     """Prompt user for antivirus, backup, and ransomware history."""
@@ -79,7 +79,7 @@ def main():
             infected_files.extend(re.findall(r'^(.*?):\s*.*\s*FOUND', scan_output, re.MULTILINE))
 
     # Step 2: Check for mass encryption
-    directory_to_scan = '/home/vethavarshini/Desktop'
+    directory_to_scan = '/home/<username>/Desktop'
     scan_depth = 5
     console.print("\n" + figlet_format("Mass Encryption Check", font="slant"), style="bold yellow")
     encrypted_files = check_mass_encryption(directory=directory_to_scan, scan_depth=scan_depth)
