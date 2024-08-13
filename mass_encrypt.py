@@ -56,6 +56,7 @@ def check_mass_encryption(directory='/', scan_depth=3, exclude_dirs=None):
 
 # Usage:
 if __name__ == "__main__":
-    directory_to_scan = '/home/vethavarshini/Desktop'
+    directory_to_scan = '/home/<username>/Desktop'
+    # add all necessary paths for scanning
     scan_depth = 5
     check_mass_encryption(directory=directory_to_scan, scan_depth=scan_depth)
