@@ -6,9 +6,8 @@ from pyfiglet import figlet_format
 
 #list of directories
 directories = [
-    '/home/vethavarshini/Desktop'
-    #'/home/vethavarshini',
-    #'/home/vethavarshini/Downloads/'
+    #'/home/username/Desktop/',
+    #'/home/username/Downloads/'
 
 ]
 directories_names=['Desktop','Home','Documents','Downloads']
