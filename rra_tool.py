@@ -7,7 +7,7 @@ import re
 
 # Import the functions from each of your scripts
 from clamscan import run_clamav_scan, parse_summary, directories
-from mass_encypt import check_mass_encryption
+from mass_encrypt import check_mass_encryption
 from lynis_scan import run_lynis_scan
 from rra_CLI import assess_risk
 
