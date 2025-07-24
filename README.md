@@ -28,7 +28,7 @@ cd Ransomware_Readiness_Assessment_Tool</code></pre>
     </li>
     <li>Install the required Python packages preferably with adminstrative privileges (sudo) :
       <pre><code>pip install termcolor tabulate rich pyfiglet fpdf</code></pre>
-      <pre><code>apt-get install python3-tk</code></pre>
+      <pre><code>sudo apt-get install python3-tk</code></pre>
     </li>
     <li>Ensure <strong>ClamAV</strong> and <strong>Lynis</strong> are installed on your system:
       <ul>
